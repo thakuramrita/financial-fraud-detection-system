@@ -11,6 +11,7 @@
 - [x] Core feature engineering pipeline implementation
 - [x] Transaction-level features (time-based, amount-based, categorical encoding)
 - [x] User behavior features (historical patterns, relative amounts)
+- [x] Main pipeline integration (python main.py --features)
 - [ ] Real-time features
 - [ ] Feature validation and monitoring
 - [ ] Unit tests and documentation
