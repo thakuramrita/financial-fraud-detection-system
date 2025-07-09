@@ -8,9 +8,9 @@
 ### Development Status
 
 - [x] Branch created and linked to issue #1
-- [ ] Core feature engineering pipeline implementation
-- [ ] Transaction-level features
-- [ ] User behavior features
+- [x] Core feature engineering pipeline implementation
+- [x] Transaction-level features (time-based, amount-based, categorical encoding)
+- [x] User behavior features (historical patterns, relative amounts)
 - [ ] Real-time features
 - [ ] Feature validation and monitoring
 - [ ] Unit tests and documentation
