@@ -76,14 +76,40 @@ This will create:
 - `data/sample_transactions.json` - Sample data for API testing
 - `data/dataset_stats.json` - Dataset statistics
 
-### 3. Train ML Model
+### 3. Train ML Models
 
 ```bash
-# Train traditional ML model
-python src/models/train_model.py
+# Train all ML models with hyperparameter tuning
+python train_models.py
 ```
 
-### 4. Start API Server
+This will:
+- Train multiple ML models (Random Forest, Gradient Boosting, Logistic Regression, SVM, Neural Network)
+- Perform hyperparameter tuning with cross-validation
+- Generate performance comparison plots
+- Save trained models to `models/` directory
+- Create comprehensive training report
+
+Alternative: Run the complete pipeline including model training:
+```bash
+python main.py
+```
+
+### 4. Evaluate Models (Optional)
+
+```bash
+# Evaluate trained models and generate detailed reports
+python src/models/model_evaluator.py
+```
+
+### 5. Test Predictions (Optional)
+
+```bash
+# Test model predictions with sample data
+python src/models/model_predictor.py
+```
+
+### 6. Start API Server
 
 ```bash
 # Start FastAPI server
